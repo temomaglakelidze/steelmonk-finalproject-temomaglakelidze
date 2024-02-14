@@ -1,0 +1,215 @@
+@mixin square-circles {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #e6fe52;
+}
+.about-us {
+  height: 591px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  .stars {
+    background: rgb(244, 244, 244);
+    background: radial-gradient(circle, #e0ebed33 1px, rgba(0, 0, 0, 1) 1px);
+    background-size: 50.84px 50.3px;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1;
+  h2 {
+    font-family: BRSonoma-Bold;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    max-width: 746px;
+    width: 100%;
+    height: 231px;
+    color: #e0ebed;
+    margin-bottom: 24px;
+  }
+  p {
+    //styleName: Body/18;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #e0ebed99;
+    max-width: 743px;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  a {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    span {
+      font-family: BRSonoma-Bold;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #e0ebed;
+      transition: all 0.3s;
+      &:hover {
+        letter-spacing: 1px;
+      }
+    }
+    &:hover {
+      text-decoration-line: none;
+      letter-spacing: 1px;
+      column-gap: 15px;
+    }
+  }
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  align-items: center;
+  .about-us-row {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    img {
+      padding: 15px;
+      border: 1px solid #e0ebed1a;
+      width: 48px;
+      height: 48px;
+    }
+    .about-row-content {
+      display: flex;
+      align-items: center;
+      .about-square {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100px;
+        height: 100px;
+        border: 1px solid #e0ebed33;
+        .square-circles {
+          display: flex;
+          column-gap: 2px;
+          .circle {
+            @include square-circles();
+          }
+          .circle-1 {
+            @include square-circles();
+            opacity: 90%;
+          }
+          .circle-2 {
+            @include square-circles();
+            opacity: 80%;
+          }
+          .circle-3 {
+            @include square-circles();
+            opacity: 70%;
+          }
+          .circle-4 {
+            @include square-circles();
+            opacity: 60%;
+          }
+          .circle-5 {
+            @include square-circles();
+            opacity: 50%;
+          }
+        }
+        p {
+          font-family: BRSonoma-Bold;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+          color: white;
+        }
+      }
+    }
+    .line {
+      width: 32px;
+      height: 1px;
+      background-color: #e0ebed33;
+    }
+  }
+  .vertical-line {
+    width: 1px;
+    height: 32px;
+    background-color: #e0ebed33;
+    margin-left: 138px;
+  }
+  .vertical-line-2 {
+    width: 1px;
+    height: 32px;
+    background-color: #e0ebed33;
+    margin-right: 138px;
+  }
+  .about-us-row-center {
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+    img {
+      padding: 15px;
+      border: 1px solid #e0ebed1a;
+      width: 48px;
+      height: 48px;
+    }
+    .about-row-content {
+      display: flex;
+      align-items: center;
+      .about-square {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100px;
+        height: 100px;
+        border: 1px solid #e0ebed33;
+        .square-circles {
+          display: flex;
+          column-gap: 2px;
+          .circle {
+            @include square-circles();
+          }
+          .circle-1 {
+            @include square-circles();
+            opacity: 90%;
+          }
+          .circle-2 {
+            @include square-circles();
+            opacity: 80%;
+          }
+          .circle-3 {
+            @include square-circles();
+            opacity: 70%;
+          }
+          .circle-4 {
+            @include square-circles();
+            opacity: 60%;
+          }
+        }
+        p {
+          font-family: BRSonoma-Bold;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+          color: white;
+        }
+      }
+    }
+    .line {
+      width: 32px;
+      height: 1px;
+      background-color: #e0ebed33;
+    }
+  }
+}

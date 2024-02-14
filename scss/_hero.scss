@@ -1,0 +1,119 @@
+.main {
+  height: 600px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  position: relative;
+  .stars {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1130px;
+    height: 491px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(244, 244, 244);
+    background: radial-gradient(circle, #e0ebed33 1px, rgba(0, 0, 0, 1) 1px);
+    background-size: 50.84px 50.3px;
+    transform: translate(-50%, -50%);
+  }
+  .main-text {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-family: BRSonoma-Bold;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 77px;
+      margin-bottom: 24px;
+      color: white;
+      max-width: 856px;
+      text-align: center;
+    }
+    p {
+      font-family: Helvetica Neue;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .main-buttons {
+      display: flex;
+      column-gap: 24px;
+      align-items: center;
+      .btn {
+        font-family: BRSonoma-Bold;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        padding: 20px;
+        background-color: #e6fe52;
+        transition: all 0.4s ease 0s;
+        &:hover {
+          background: #434343;
+          letter-spacing: 1px;
+          -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+          -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+          box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+          transition: all 0.4s ease 0s;
+          color: yellow;
+        }
+      }
+      .main-link {
+        position: relative;
+        margin: auto;
+        padding: 19px 22px;
+        transition: all 0.2s ease;
+        font-family: BRSonoma-Bold;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: white;
+        text-decoration-line: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          border-radius: 28px;
+          background: #e6fe52;
+          width: 56px;
+          height: 56px;
+          transition: all 0.4s ease;
+        }
+        span {
+          position: relative;
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: 900;
+          vertical-align: middle;
+          span {
+            color: black;
+          }
+        }
+        &:hover.main-link::before {
+          width: 100%;
+          background-color: yellow;
+        }
+        &:hover {
+          color: black;
+          letter-spacing: 0.25em;
+        }
+        img {
+          filter: invert(1);
+        }
+      }
+    }
+  }
+}
