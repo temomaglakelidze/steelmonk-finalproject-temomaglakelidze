@@ -6,6 +6,11 @@
 @import "./partners";
 @import "./about-us";
 @import "./strategy";
+@import "./approach";
 body {
   background-color: black;
+  .container {
+    max-width: 1296px;
+    width: 100%;
+  }
 }
