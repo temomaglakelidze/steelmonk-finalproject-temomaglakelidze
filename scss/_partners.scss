@@ -1,11 +1,11 @@
 .partners {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 138px;
   max-width: 1296px;
   width: 100%;
   margin: auto;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 950px) {
   .partners {
