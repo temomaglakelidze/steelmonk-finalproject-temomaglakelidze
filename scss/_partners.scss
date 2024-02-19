@@ -2,5 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 128px;
+  margin-bottom: 138px;
+  max-width: 1296px;
+  width: 100%;
+  margin: auto;
+}
+@media only screen and (max-width: 950px) {
+  .partners {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 138px;
+    max-width: 1296px;
+    width: 100%;
+    margin: auto;
+  }
 }
