@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
+  margin-bottom: 64px;
   h2 {
     font-family: BRSonoma-Bold;
     font-size: 40px;
@@ -16,6 +17,11 @@
   }
   .strategy-content {
     display: flex;
+    justify-content: center;
+
+    button {
+      display: none;
+    }
     .strategy-square {
       max-width: 324px;
       width: 100%;
@@ -74,13 +80,49 @@
     }
   }
 }
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 950px) {
   .strategy {
     align-items: center;
+    justify-content: center;
     .strategy-content {
-      margin: auto;
       max-width: none;
       flex-wrap: wrap;
+      button {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .strategy {
+    h2 {
+      text-align: center;
+    }
+    .strategy-content {
+      .strategy-square {
+        height: 200px;
+        padding: 24px;
+        .strategy-small-squares {
+          margin-bottom: 16px;
+        }
+        h2 {
+          margin-bottom: 7px;
+        }
+        p {
+          margin-bottom: 24px;
+        }
+      }
+    }
+    .line {
+      margin: 64px 0px;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .strategy {
+    h2 {
+      font-size: 32px;
+      line-height: 24px;
     }
   }
 }

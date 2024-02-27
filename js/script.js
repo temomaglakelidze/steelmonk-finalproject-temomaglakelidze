@@ -5,7 +5,7 @@ function toggleMenu() {
   var header = document.getElementById("header");
   header.classList.toggle("active-header");
 
-  var body = document.getElementById("body");
+  var body = document.body;
   body.classList.toggle("overflow-hidden");
 }
 document.querySelector(".hamburger").addEventListener("click", (e) => {

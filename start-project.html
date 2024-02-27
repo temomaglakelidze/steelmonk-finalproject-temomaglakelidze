@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="start-project">
+    <header class="container-fluid" id="header">
+      <div class="col-sm-4">
+        <a href="index.html"><img src="images/logo.svg" alt="Steelmonk" /></a>
+      </div>
+      <div class="col-sm-4 header-center">
+        <span>Steelmonk design</span>
+      </div>
+      <div class="col-sm-4 header-end">
+        <a class="btn header-btn">Start a Project</a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="hamburger-container">
+            <div class="hamburger-inner"></div>
+            <div class="hamburger-hidden"></div>
+            <div class="hamburger-hidden right-line-1"></div>
+            <div class="hamburger-hidden right-line-2"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-4 d-none d-sm-block">
+            <div class="menu-links">
+              <span>Follow us</span>
+              <ul>
+                <a href="#"><li>Facebook</li></a>
+                <a href="#"><li>Instagram</li></a>
+                <a href="#"><li>Twiter</li></a>
+                <a href="#"><li>Dribbble</li></a>
+                <a href="#"><li>Behance</li></a>
+                <a href="#"><li>Linkedin</li></a>
+                <a href="#"><li>Youtube</li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="menu-links-2">
+              <span>Menu</span>
+              <nav class="menu-nav">
+                <ul class="nav-list">
+                  <a href="#">
+                    <li>Works</li>
+                  </a>
+                  <a href="#">
+                    <li>About us</li>
+                  </a>
+                  <a href="#">
+                    <li>Services</li>
+                  </a>
+                  <a href="#">
+                    <li>Contact us</li>
+                  </a>
+                </ul>
+              </nav>
+              <p>Have a project in mind? Let’s get to work.</p>
+            </div>
+          </div>
+          <div class="col-4 d-none d-md-block">
+            <img src="images/menu-img.svg" alt="img" class="menu-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="second-hero">
+      <div class="container">
+        <div class="col-9">
+          <div class="second-hero-text">
+            <h1>Have a project in mind? Let’s get to work.</h1>
+            <p>
+              Perhaps there’s a way your business could benefit by partnering
+              with Steelmonk Design? Please share your thoughts in the form
+              below, and we’ll respond within 48 hours of receiving the inquiry.
+            </p>
+          </div>
+
+          <div class="second-stars"><!--content in scss--></div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="second-partners">
+        <img src="images/partners/porche.svg" alt="porche-log" /><img
+          src="images/partners/uber.svg"
+          alt="uber"
+        /><img src="images/partners/ptogenius.svg" alt="ptogenius" /><img
+          src="images/partners/zeppix.svg"
+          alt="zeppix"
+        /><img src="images/partners/payday.svg" alt="payday" /><img
+          src="images/partners/brandingfox.svg"
+          alt="brandingfox"
+        />
+        <img src="images/partners/navio.svg" alt="navio" />
+      </div>
+    </section>
+    <section class="container">
+      <div class="offers">
+        <div class="row">
+          <div class="col-8 m-auto">
+            <div class="offers-content">
+              <h2>
+                We are excited to take on your new project and help you build
+                something amazing!
+              </h2>
+              <div class="offers-text">
+                <p>i'm interested in...</p>
+                <div class="offers-buttons">
+                  <button class="btn offers-btn">brandings</button>
+                  <button class="btn offers-btn">Web Design</button>
+                  <button class="btn offers-btn">App Design</button>
+                  <button class="btn offers-btn">UX Research</button>
+                  <button class="btn offers-btn">HTML/CSS</button>
+                  <button class="btn offers-btn">iOS Development</button>
+                  <button class="btn offers-btn">Design Systems</button>
+                  <button class="btn offers-btn">Android Development</button>
+                </div>
+              </div>
+              <form action="#">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email" />
+                <input type="text" placeholder="Tell us about your project" />
+
+                <div class="budget">
+                  <h4>Project budget (USD)</h4>
+                  <div class="d-flex gap-4 budget-buttons">
+                    <button class="budget-btn">$5-10K</button>
+                    <button class="budget-btn">$10-15K</button>
+                    <button class="budget-btn">$15-20K</button>
+                    <button class="budget-btn">$20-30K</button>
+                    <button class="budget-btn">$30+K</button>
+                  </div>
+                  <button type="submit" class="btn btn-primary budget-submit">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-4 d-none d-xl-block">
+            <div class="offers-img">
+              <div class="offers-square">
+                <h3 class="mb-3">Payday Web App</h3>
+                <p>Manage your payment, bills, banking Cards and more.</p>
+                <a href="#"
+                  >View Case Study <img src="images/arrow-left.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="footer-text">
+          <h2>Have a project in mind? Let’s get to work.</h2>
+          <p>
+            We help fast growth teams scale their design roadmaps at lightning
+            speeds
+          </p>
+          <a href="start-project.html" class="footer-btn">Start a Project</a>
+        </div>
+        <div class="footer-menu">
+          <div class="col-sm-6">
+            <div class="footer-menu-title">
+              <h2>Steelmonk Design</h2>
+              <div class="footer-animation overflow-hidden">
+                <ul>
+                  <li class="text-nowrap">
+                    Design adds value faster than it adds costs.
+                  </li>
+                  <li class="text-nowrap">
+                    Design is intelligence made visible.
+                  </li>
+                  <li class="text-nowrap">Everything is designed.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-4 d-flex flex-column gap-3">
+                <span>What we do</span>
+                <nav class="menu-nav">
+                  <ul class="d-flex flex-column gap-3">
+                    <a href="#">
+                      <li>Works</li>
+                    </a>
+                    <a href="#">
+                      <li>About us</li>
+                    </a>
+                    <a href="#">
+                      <li>Services</li>
+                    </a>
+                    <a href="#">
+                      <li>Contact us</li>
+                    </a>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-4 footer-about d-flex flex-column gap-3">
+                <span>Who we are</span>
+                <nav>
+                  <ul class="d-flex flex-column gap-3">
+                    <a href="#"><li>About us</li></a>
+                    <a href="#"><li>Insight</li></a>
+                    <a href="#"><li>Join us</li></a>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-4 footer-contact d-flex flex-column gap-3">
+                <span>Follow us</span>
+                <ul class="d-flex flex-column gap-3">
+                  <a href="#"><li>Facebook</li></a>
+                  <a href="#"><li>Instagram</li></a>
+                  <a href="#"><li>Twiter</li></a>
+                  <a href="#"><li>Dribbble</li></a>
+                  <a href="#"><li>Behance</li></a>
+                  <a href="#"><li>Linkedin</li></a>
+                  <a href="#"><li>Youtube</li></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <span>© Steelmonk Design 2022. All rights reserved.</span>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>

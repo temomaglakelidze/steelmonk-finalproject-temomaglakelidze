@@ -42,6 +42,7 @@
       line-height: 30px;
       text-align: center;
       margin-bottom: 32px;
+      color: #e0ebed99;
     }
     .main-buttons {
       display: flex;
@@ -113,6 +114,44 @@
         }
         img {
           filter: invert(1);
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    height: 476px;
+    .main-text {
+      h1 {
+        font-size: 32px;
+        line-height: normal;
+        max-width: 400px;
+      }
+      p {
+        font-size: 18px;
+        line-height: normal;
+        max-width: 400px;
+      }
+      .main-buttons {
+        flex-direction: column;
+        gap: 24px;
+        .main-link {
+          column-gap: 10px;
+          &::before {
+            display: none;
+          }
+          img {
+            filter: none;
+          }
+          span {
+            span {
+              color: white;
+            }
+          }
+          &:hover {
+            color: white;
+          }
         }
       }
     }

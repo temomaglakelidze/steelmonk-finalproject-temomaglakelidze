@@ -14,61 +14,81 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body id="body">
+    <div class="body-links">
+      <a href="#">FACEBOOK</a>
+      <a href="#">LINKEDIN</a>
+      <a href="#">INSTAGRAM</a>
+      <div class="dots-space">
+        <div class="dots"><!--content in scss--></div>
+        <div class="dots"><!--content in scss--></div>
+        <div class="dots"><!--content in scss--></div>
+      </div>
+    </div>
     <header class="container-fluid" id="header">
-      <div class="col-xs-4">
+      <div class="col-sm-4">
         <a href="index.html"><img src="images/logo.svg" alt="Steelmonk" /></a>
       </div>
-      <div class="col-xs-4 header-center">
+      <div class="col-sm-4 header-center">
         <span>Steelmonk design</span>
       </div>
-      <div class="col-xs-4 header-end">
-        <a class="btn header-btn">Start a Project</a>
+      <div class="col-sm-4 header-end">
+        <a href="start-project.html" class="btn header-btn">Start a Project</a>
         <div class="hamburger" onclick="toggleMenu()">
           <div class="hamburger-container">
-            <div class="hamburger-inner"></div>
-            <div class="hamburger-hidden"></div>
-            <div class="hamburger-hidden right-line-1"></div>
-            <div class="hamburger-hidden right-line-2"></div>
+            <div class="hamburger-inner"><!--content in scss--></div>
+            <div class="hamburger-hidden"><!--content in scss--></div>
+            <div class="hamburger-hidden right-line-1">
+              <!--content in scss-->
+            </div>
+            <div class="hamburger-hidden right-line-2">
+              <!--content in scss-->
+            </div>
           </div>
         </div>
       </div>
     </header>
     <section class="menu" id="menu">
       <div class="container">
-        <div class="col-md-4 menu-links">
-          <span>Follow us</span>
-          <ul>
-            <a href="#"><li>Facebook</li></a>
-            <a href="#"><li>Instagram</li></a>
-            <a href="#"><li>Twiter</li></a>
-            <a href="#"><li>Dribbble</li></a>
-            <a href="#"><li>Behance</li></a>
-            <a href="#"><li>Linkedin</li></a>
-            <a href="#"><li>Youtube</li></a>
-          </ul>
-        </div>
-        <div class="col-md-4 menu-links-2">
-          <span>Menu</span>
-          <nav class="menu-nav">
-            <ul class="nav-list">
-              <a href="#">
-                <li>Works</li>
-              </a>
-              <a href="#">
-                <li>About us</li>
-              </a>
-              <a href="#">
-                <li>Services</li>
-              </a>
-              <a href="#">
-                <li>Contact us</li>
-              </a>
-            </ul>
-          </nav>
-          <p>Have a project in mind? Let’s get to work.</p>
-        </div>
-        <div class="col-md-4">
-          <img src="images/menu-img.svg" alt="img" class="menu-img" />
+        <div class="row justify-content-center">
+          <div class="col-4 d-none d-sm-block">
+            <div class="menu-links">
+              <span>Follow us</span>
+              <ul>
+                <a href="#"><li>Facebook</li></a>
+                <a href="#"><li>Instagram</li></a>
+                <a href="#"><li>Twiter</li></a>
+                <a href="#"><li>Dribbble</li></a>
+                <a href="#"><li>Behance</li></a>
+                <a href="#"><li>Linkedin</li></a>
+                <a href="#"><li>Youtube</li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="menu-links-2">
+              <span>Menu</span>
+              <nav class="menu-nav">
+                <ul class="nav-list">
+                  <a href="#">
+                    <li>Works</li>
+                  </a>
+                  <a href="#">
+                    <li>About us</li>
+                  </a>
+                  <a href="#">
+                    <li>Services</li>
+                  </a>
+                  <a href="#">
+                    <li>Contact us</li>
+                  </a>
+                </ul>
+              </nav>
+              <p>Have a project in mind? Let’s get to work.</p>
+            </div>
+          </div>
+          <div class="col-4 d-none d-md-block">
+            <img src="images/menu-img.svg" alt="img" class="menu-img" />
+          </div>
         </div>
       </div>
     </section>
@@ -91,69 +111,78 @@
         </div>
       </div>
     </section>
-    <section class="container payday">
-      <div class="col-sm-4 payday-statistic">
-        <div class="payday-nmb">
-          <div class="payday-nmb-text">
-            <h3>15+</h3>
-            <p>International Clients</p>
-          </div>
-          <img src="images/arrow-right-up.svg" alt="arrow" />
-        </div>
-        <div class="payday-line">
-          <!-- content in scss -->
-        </div>
+    <section class="container">
+      <div class="payday">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="payday-statistic">
+              <div class="payday-nmb">
+                <div class="payday-nmb-text">
+                  <h3>15+</h3>
+                  <p>International Clients</p>
+                </div>
+                <img src="images/arrow-right-up.svg" alt="arrow" />
+              </div>
+              <div class="payday-line">
+                <!-- content in scss -->
+              </div>
 
-        <div class="payday-nmb">
-          <div class="payday-nmb-text">
-            <h3>50+</h3>
-            <p>Successfull Projects</p>
-          </div>
-          <img src="images/arrow-right-up.svg" alt="arrow" />
-        </div>
-        <div class="payday-line">
-          <!-- content in scss -->
-        </div>
-        <div class="payday-nmb">
-          <div class="payday-nmb-text">
-            <h3>10+</h3>
-            <p>Design Awards</p>
-          </div>
-          <img src="images/arrow-right-up.svg" alt="arrow" />
-        </div>
-      </div>
-      <div class="col-md-8 payday-content">
-        <div class="payday-content-column">
-          <div class="payday-content-text">
-            <div class="hashtags">
-              <a href="#"><span> #productdesign</span></a>
-              <a href="#"><span> #uiux</span></a>
-            </div>
-            <div class="payday-text-title">
-              <h3>Payday Web App</h3>
-              <p>Manage your payment, bills, banking Cards and more.</p>
-              <a href="#"
-                >Start a Project <img src="images/arrow-left.svg" alt="arrow"
-              /></a>
+              <div class="payday-nmb">
+                <div class="payday-nmb-text">
+                  <h3>50+</h3>
+                  <p>Successfull Projects</p>
+                </div>
+                <img src="images/arrow-right-up.svg" alt="arrow" />
+              </div>
+              <div class="payday-line">
+                <!-- content in scss -->
+              </div>
+              <div class="payday-nmb">
+                <div class="payday-nmb-text">
+                  <h3>10+</h3>
+                  <p>Design Awards</p>
+                </div>
+                <img src="images/arrow-right-up.svg" alt="arrow" />
+              </div>
             </div>
           </div>
-          <img
-            src="images/payday-img.svg"
-            alt="statistic"
-            class="payday-responsive-img"
-          />
-          <div class="payday-buttons">
-            <button class="btn payday-btn">
-              <img src="images/arrow-left-s-line.svg" alt="arrow" />
-            </button>
-            <button class="btn payday-btn">
-              <img src="images/arrow-right-s-line.svg" alt="arrow" />
-            </button>
+          <div class="col-md-8">
+            <div class="payday-content">
+              <div class="payday-content-column">
+                <div class="payday-content-text">
+                  <div class="hashtags">
+                    <a href="#"><span> #productdesign</span></a>
+                    <a href="#"><span> #uiux</span></a>
+                  </div>
+                  <div class="payday-text-title">
+                    <h3>Payday Web App</h3>
+                    <p>Manage your payment, bills, banking Cards and more.</p>
+                    <a href="start-project.html"
+                      >Start a Project
+                      <img src="images/arrow-left.svg" alt="arrow"
+                    /></a>
+                  </div>
+                </div>
+                <img
+                  src="images/payday-img.svg"
+                  alt="statistic"
+                  class="payday-responsive-img"
+                />
+                <div class="payday-buttons">
+                  <button class="btn payday-btn">
+                    <img src="images/arrow-left-s-line.svg" alt="arrow" />
+                  </button>
+                  <button class="btn payday-btn">
+                    <img src="images/arrow-right-s-line.svg" alt="arrow" />
+                  </button>
+                </div>
+              </div>
+              <div class="main-payday-column">
+                <div class="payday-square"><!--content in scss--></div>
+                <img src="images/payday-img.svg" alt="statistic" />
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="main-payday-column">
-          <div class="payday-square"><!--content in scss--></div>
-          <img src="images/payday-img.svg" alt="statistic" />
         </div>
       </div>
     </section>
@@ -333,8 +362,8 @@
             support of their brand and product design needs.
           </p>
         </div>
-        <div class="approach-text overflow-hidden">
-          <div class="approach-text-div">
+        <div class="approach-text">
+          <div class="approach-text-div approach-text-div-1">
             <img
               src="images/icons/square-icon.svg"
               alt="square-icon"
@@ -350,7 +379,7 @@
               mutual commitment to your success.
             </p>
           </div>
-          <div class="approach-text-div">
+          <div class="approach-text-div approach-text-div-2">
             <img
               src="images/icons/web-world.svg"
               alt="square-icon"
@@ -367,12 +396,13 @@
           </div>
         </div>
       </div>
-      <div class="line"><!--content in scss--></div>
     </section>
     <section class="articles container-fluid flex-column">
       <div class="container flex-column">
         <h2>Related Articles</h2>
-        <div class="d-flex justify-content-center gap-4">
+        <div
+          class="d-flex justify-content-center gap-4 flex-column flex-sm-row"
+        >
           <div class="col-sm-6">
             <img src="images/figures.png" alt="figures" class="mb-4" />
             <p class="mb-3">By Steelmonk - September 1, 2022</p>
@@ -394,59 +424,69 @@
           We help fast growth teams scale their design roadmaps at lightning
           speeds
         </p>
-        <a class="footer-btn">Start a Project</a>
+        <a href="start-project.html" class="footer-btn">Start a Project</a>
       </div>
       <div class="footer-menu">
-        <div class="col-md-3 footer-menu-title">
-          <h2>Steelmonk Design</h2>
-          <div class="footer-animation overflow-hidden">
-            <ul>
-              <li>Design adds value faster than it adds costs.</li>
-              <li>Design is intelligence made visible.</li>
-              <li>Everything is designed.</li>
-            </ul>
+        <div class="col-sm-6">
+          <div class="footer-menu-title">
+            <h2>Steelmonk Design</h2>
+            <div class="footer-animation overflow-hidden">
+              <ul>
+                <li class="text-nowrap">
+                  Design adds value faster than it adds costs.
+                </li>
+                <li class="text-nowrap">
+                  Design is intelligence made visible.
+                </li>
+                <li class="text-nowrap">Everything is designed.</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-md-3 d-flex flex-column gap-3">
-          <span>What we do</span>
-          <nav class="menu-nav">
-            <ul class="d-flex flex-column gap-3">
-              <a href="#">
-                <li>Works</li>
-              </a>
-              <a href="#">
-                <li>About us</li>
-              </a>
-              <a href="#">
-                <li>Services</li>
-              </a>
-              <a href="#">
-                <li>Contact us</li>
-              </a>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-md-3 footer-about d-flex flex-column gap-3">
-          <span>Who we are</span>
-          <nav>
-            <ul class="d-flex flex-column gap-3">
-              <a href="#"><li>About us</li></a>
-              <a href="#"><li>Insight</li></a>
-              <a href="#"><li>Join us</li></a>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-md-3 footer-contact d-flex flex-column gap-3">
-          <span>Follow us</span>
-          <ul class="d-flex flex-column gap-3">
-            <a href="#"><li>Facebook</li></a>
-            <a href="#"><li>Instagram</li></a>
-            <a href="#"><li>Twiter</li></a>
-            <a href="#"><li>Dribbble</li></a>
-            <a href="#"><li>Behance</li></a>
-            <a href="#"><li>Linkedin</li></a>
-            <a href="#"><li>Youtube</li></a>
-          </ul>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-4 d-flex flex-column gap-3">
+              <span>What we do</span>
+              <nav class="menu-nav">
+                <ul class="d-flex flex-column gap-3">
+                  <a href="#">
+                    <li>Works</li>
+                  </a>
+                  <a href="#">
+                    <li>About us</li>
+                  </a>
+                  <a href="#">
+                    <li>Services</li>
+                  </a>
+                  <a href="#">
+                    <li>Contact us</li>
+                  </a>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-4 footer-about d-flex flex-column gap-3">
+              <span>Who we are</span>
+              <nav>
+                <ul class="d-flex flex-column gap-3">
+                  <a href="#"><li>About us</li></a>
+                  <a href="#"><li>Insight</li></a>
+                  <a href="#"><li>Join us</li></a>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-4 footer-contact d-flex flex-column gap-3">
+              <span>Follow us</span>
+              <ul class="d-flex flex-column gap-3">
+                <a href="#"><li>Facebook</li></a>
+                <a href="#"><li>Instagram</li></a>
+                <a href="#"><li>Twiter</li></a>
+                <a href="#"><li>Dribbble</li></a>
+                <a href="#"><li>Behance</li></a>
+                <a href="#"><li>Linkedin</li></a>
+                <a href="#"><li>Youtube</li></a>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div class="copyright">

@@ -9,10 +9,75 @@
 @import "./approach";
 @import "./articles";
 @import "./footer";
+@import "./start-project";
+@import "./second-hero";
+@import "./second-partners";
+@import "./offers";
+@font-face {
+  font-family: "BRSonoma-Bold";
+  src: url("../fonts/BRSonoma-Bold.woff2") format("woff2"),
+    url("../fonts/BRSonoma-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Light.woff2") format("woff2"),
+    url("../fonts/HelveticaNeue-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background-color: black;
+  position: relative;
   .container {
     max-width: 1296px;
     width: 100%;
+  }
+  .body-links {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 10%;
+    left: -60px;
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+    z-index: 5;
+    a {
+      //styleName: Body/12;
+      font-family: Helvetica Neue;
+      font-size: 12px;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: rgba(224, 235, 237, 0.4);
+      &:hover {
+        color: white;
+      }
+    }
+    .dots-space {
+      height: 4px;
+      width: 18px;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      .dots {
+        width: 4px;
+        height: 4px;
+        background-color: rgba(224, 235, 237, 1);
+        border-radius: 2px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  body {
+    .body-links {
+      display: none;
+    }
   }
 }

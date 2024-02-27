@@ -281,3 +281,38 @@
     }
   }
 }
+@media only screen and (max-width: 768px) {
+  .about-us {
+    height: 410px;
+    .about-us-content {
+      display: none;
+    }
+
+    a {
+      margin-top: 0px;
+    }
+    .about-us-text {
+      h2 {
+        line-height: normal;
+        font-size: 48px;
+        height: auto;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about-us {
+    height: 270px;
+    .about-us-text {
+      h2 {
+        font-size: 32px;
+        line-height: normal;
+        height: auto;
+      }
+      p {
+        line-height: normal;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
