@@ -1,6 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .offers {
   margin-top: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   .offers-content {
     h2 {
@@ -11,7 +22,12 @@
       margin-bottom: 48px;
     }
     .offers-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       gap: 32px;
       max-width: 700px;
@@ -24,7 +40,10 @@
         text-align: left;
       }
       .offers-buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         gap: 24px;
         .offers-btn {
@@ -46,18 +65,47 @@
       }
     }
     form {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       margin-top: 20px;
       input {
         border: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         outline: none;
-        padding: 24px;
+        padding: 24px 0;
         font-family: Helvetica Neue;
         font-size: 20px;
         line-height: 34px;
         color: black;
+        &::-webkit-input-placeholder {
+          font-family: Helvetica Neue;
+          font-size: 20px;
+          line-height: 34px;
+          color: rgba(0, 0, 0, 0.4);
+        }
+        &::-moz-placeholder {
+          font-family: Helvetica Neue;
+          font-size: 20px;
+          line-height: 34px;
+          color: rgba(0, 0, 0, 0.4);
+        }
+        &:-ms-input-placeholder {
+          font-family: Helvetica Neue;
+          font-size: 20px;
+          line-height: 34px;
+          color: rgba(0, 0, 0, 0.4);
+        }
+        &::-ms-input-placeholder {
+          font-family: Helvetica Neue;
+          font-size: 20px;
+          line-height: 34px;
+          color: rgba(0, 0, 0, 0.4);
+        }
         &::placeholder {
           font-family: Helvetica Neue;
           font-size: 20px;
@@ -71,7 +119,12 @@
     }
     .budget {
       margin-top: 48px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       gap: 32px;
       margin-bottom: 128px;
@@ -110,9 +163,10 @@
         display: inline;
         border: none;
         padding: 20px 54px;
-        width: 193px !important;
+        width: 200px !important;
         margin-top: 16px;
         border-radius: 0%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         &:hover {
           color: white;
           background-color: black;
@@ -128,7 +182,11 @@
     background-size: cover;
     background-position: top left;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
     .offers-square {
@@ -155,8 +213,14 @@
         text-align: left;
       }
       a {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-column-gap: 10px;
+        -moz-column-gap: 10px;
         column-gap: 10px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         font-family: BRSonoma-Bold;
         font-size: 14px;
@@ -165,13 +229,18 @@
         letter-spacing: 0em;
         text-align: center;
         color: black;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
         img {
+          -webkit-filter: invert(1);
           filter: invert(1);
         }
       }
     }
     &:hover a {
+      -webkit-column-gap: 15px;
+      -moz-column-gap: 15px;
       column-gap: 15px;
     }
   }
@@ -182,10 +251,14 @@
       text-align: center;
       .offers-text {
         .offers-buttons {
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
         }
       }
       .budget {
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
         align-items: center !important;
       }
     }
@@ -223,7 +296,10 @@
         font-size: 24px;
         line-height: 27px;
         .budget-buttons {
+          -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
           gap: 0.5em !important;
         }

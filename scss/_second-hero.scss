@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .second-hero {
   position: relative;
   .second-hero-text {
@@ -21,6 +28,7 @@
     position: absolute;
     width: 500px;
     height: 500px;
+    background: -o-radial-gradient(circle, rgb(31 31 31 / 25%) 2px, white 2px);
     background: radial-gradient(circle, rgb(31 31 31 / 25%) 2px, white 2px);
     background-size: 50.84px 50.3px;
     z-index: -1;
@@ -29,7 +37,11 @@
 @media only screen and (max-width: 1200px) {
   .second-hero {
     .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       .second-hero-text {
         text-align: center;

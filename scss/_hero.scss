@@ -1,10 +1,23 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .main {
   height: 600px;
   background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0px;
   position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   .stars {
     position: absolute;
@@ -13,18 +26,34 @@
     max-width: 1130px;
     width: 100%;
     height: 491px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background: rgb(244, 244, 244);
+    background: -o-radial-gradient(circle, #e0ebed33 2px, rgba(0, 0, 0, 1) 2px);
     background: radial-gradient(circle, #e0ebed33 2px, rgba(0, 0, 0, 1) 2px);
     background-size: 50.84px 50.3px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
   .main-text {
     z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     h1 {
       font-family: BRSonoma-Bold;
@@ -45,8 +74,14 @@
       color: #e0ebed99;
     }
     .main-buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-column-gap: 24px;
+      -moz-column-gap: 24px;
       column-gap: 24px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       .btn {
         font-family: BRSonoma-Bold;
@@ -56,13 +91,16 @@
         text-align: center;
         padding: 20px;
         background-color: #e6fe52;
+        -webkit-transition: all 0.4s ease 0s;
+        -o-transition: all 0.4s ease 0s;
         transition: all 0.4s ease 0s;
         &:hover {
           background: #434343;
           letter-spacing: 1px;
           -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-          -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
           box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+          -webkit-transition: all 0.4s ease 0s;
+          -o-transition: all 0.4s ease 0s;
           transition: all 0.4s ease 0s;
           color: yellow;
         }
@@ -71,6 +109,8 @@
         position: relative;
         margin: auto;
         padding: 19px 22px;
+        -webkit-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
         font-family: BRSonoma-Bold;
         font-size: 14px;
@@ -79,8 +119,13 @@
         letter-spacing: 0em;
         text-align: center;
         color: white;
+        -webkit-text-decoration-line: none;
         text-decoration-line: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         cursor: pointer;
         &:before {
@@ -93,6 +138,8 @@
           background: #e6fe52;
           width: 56px;
           height: 56px;
+          -webkit-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
           transition: all 0.4s ease;
         }
         span {
@@ -113,6 +160,7 @@
           color: black;
         }
         img {
+          -webkit-filter: invert(1);
           filter: invert(1);
         }
       }
@@ -134,14 +182,20 @@
         max-width: 400px;
       }
       .main-buttons {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 24px;
         .main-link {
+          -webkit-column-gap: 10px;
+          -moz-column-gap: 10px;
           column-gap: 10px;
           &::before {
             display: none;
           }
           img {
+            -webkit-filter: none;
             filter: none;
           }
           span {

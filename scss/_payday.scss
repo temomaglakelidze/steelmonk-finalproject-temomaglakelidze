@@ -1,10 +1,26 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .payday {
+  -webkit-column-gap: 24px;
+  -moz-column-gap: 24px;
   column-gap: 24px;
   margin-bottom: 64px;
   .payday-statistic {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 48px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     max-width: 416px;
     width: 100%;
@@ -17,8 +33,14 @@
       background-color: black;
     }
     .payday-nmb {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       cursor: pointer;
       img {
@@ -28,7 +50,12 @@
         display: block;
       }
       .payday-nmb-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 12px;
         h3 {
@@ -54,22 +81,42 @@
     width: 100%;
     background-color: #2d2f2f;
     padding: 48px 0px 48px 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     .payday-content-column {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       width: 240px;
       .payday-responsive-img {
         display: none;
       }
       .payday-content-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 1em;
         .hashtags {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-column-gap: 16px;
+          -moz-column-gap: 16px;
           column-gap: 16px;
           a {
             span {
@@ -111,20 +158,37 @@
           line-height: 20px;
           text-align: center;
           color: #e0ebed;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
+          -webkit-column-gap: 10px;
+          -moz-column-gap: 10px;
           column-gap: 10px;
+          -webkit-transition: all 0.3s;
+          -o-transition: all 0.3s;
           transition: all 0.3s;
           &:hover {
             letter-spacing: 1px;
+            -webkit-text-decoration-line: none;
             text-decoration-line: none;
+            -webkit-column-gap: 15px;
+            -moz-column-gap: 15px;
             column-gap: 15px;
           }
         }
       }
       .payday-buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-column-gap: 6px;
+        -moz-column-gap: 6px;
         column-gap: 6px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         .payday-btn {
           padding: 20px;
@@ -134,6 +198,8 @@
           width: 60px;
           height: 60px;
           border-radius: 0;
+          -webkit-transition: all 0.3s;
+          -o-transition: all 0.3s;
           transition: all 0.3s;
           &:hover {
             border: 1px solid white;
@@ -142,8 +208,14 @@
       }
     }
     .main-payday-column {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-column-gap: 0px;
+      -moz-column-gap: 0px;
       column-gap: 0px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       .payday-square {
         width: 20px;
@@ -167,6 +239,8 @@
 @media only screen and (max-width: 976px) {
   .payday {
     .payday-content {
+      -webkit-box-flex: 1;
+      -ms-flex: auto;
       flex: auto;
       padding: 20px;
       .main-payday-column {
@@ -175,7 +249,12 @@
       .payday-content-column {
         width: 100%;
         .payday-content-text {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
           gap: 0em;
           a {
@@ -202,7 +281,11 @@
       .payday-text-title {
         text-align: center;
         a {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
         }
       }

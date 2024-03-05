@@ -1,11 +1,28 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 header {
-  // background-color: black;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 48px;
   .header-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     span {
       font-family: Helvetica Neue;
@@ -16,9 +33,17 @@ header {
     }
   }
   .header-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: end;
+    -webkit-column-gap: 42px;
+    -moz-column-gap: 42px;
     column-gap: 42px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     .header-btn {
       font-family: BRSonoma-Bold;
@@ -28,6 +53,8 @@ header {
       color: #e0ebed;
       padding: 20px;
       background: none;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
       transition: all 0.3s;
       position: relative;
       cursor: pointer;
@@ -44,10 +71,14 @@ header {
         height: 100%;
         z-index: 1;
         background-color: rgba(255, 255, 255, 0.1);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
       }
       &:hover::before {
         opacity: 0;
+        -webkit-transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
         transform: scale(0.5, 0.5);
       }
       &.header-btn::after {
@@ -59,12 +90,18 @@ header {
         height: 100%;
         z-index: 1;
         border: 1px solid #e6fe52;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
         transform: scale(1.3);
         opacity: 0;
       }
       &:hover::after {
         opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
         transform: scale(1);
       }
     }
@@ -78,9 +115,18 @@ header {
   .hamburger-container {
     width: 45px;
     height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
     position: relative;
@@ -91,13 +137,25 @@ header {
       height: 2px;
       background-color: white;
       border-radius: 4px;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
       transform: translate(0, -50%);
       opacity: 1;
+      -webkit-transition-property: opacity, -webkit-transform;
+      transition-property: opacity, -webkit-transform;
+      -o-transition-property: transform, opacity;
       transition-property: transform, opacity;
+      transition-property: transform, opacity, -webkit-transform;
+      -webkit-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
       transition-timing-function: ease;
+      -webkit-transition-duration: 0.4s;
+      -o-transition-duration: 0.4s;
       transition-duration: 0.4s;
     }
     &:hover .hamburger-inner {
+      -webkit-transform: translate(-53px);
+      -ms-transform: translate(-53px);
       transform: translate(-53px);
       opacity: 0;
     }
@@ -110,9 +168,19 @@ header {
       background-color: white;
       border-radius: 4px;
       opacity: 1;
+      -webkit-transition-property: opacity, -webkit-transform;
+      transition-property: opacity, -webkit-transform;
+      -o-transition-property: transform, opacity;
       transition-property: transform, opacity;
+      transition-property: transform, opacity, -webkit-transform;
+      -webkit-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
       transition-timing-function: ease;
+      -webkit-transition-duration: 0.4s;
+      -o-transition-duration: 0.4s;
       transition-duration: 0.4s;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
       transform: translate(0, -50%);
     }
     &::before {
@@ -124,16 +192,30 @@ header {
       background-color: white;
       border-radius: 4px;
       opacity: 1;
+      -webkit-transition-property: opacity, -webkit-transform;
+      transition-property: opacity, -webkit-transform;
+      -o-transition-property: transform, opacity;
       transition-property: transform, opacity;
+      transition-property: transform, opacity, -webkit-transform;
+      -webkit-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
       transition-timing-function: ease;
+      -webkit-transition-duration: 0.4s;
+      -o-transition-duration: 0.4s;
       transition-duration: 0.4s;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
       transform: translate(0, -50%);
     }
     &:hover::before {
+      -webkit-transform: translate(53px, 0);
+      -ms-transform: translate(53px, 0);
       transform: translate(53px, 0);
       opacity: 0;
     }
     &:hover::after {
+      -webkit-transform: translate(53px, 0);
+      -ms-transform: translate(53px, 0);
       transform: translate(53px, 0);
       opacity: 0;
     }
@@ -145,9 +227,19 @@ header {
       background-color: #e6fe52;
       border-radius: 4px;
       opacity: 0;
+      -webkit-transition-property: opacity, -webkit-transform;
+      transition-property: opacity, -webkit-transform;
+      -o-transition-property: transform, opacity;
       transition-property: transform, opacity;
+      transition-property: transform, opacity, -webkit-transform;
+      -webkit-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
       transition-timing-function: ease;
+      -webkit-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
       transition-duration: 0.2s;
+      -webkit-transform: translate(53px, -50%);
+      -ms-transform: translate(53px, -50%);
       transform: translate(53px, -50%);
     }
 
@@ -157,10 +249,20 @@ header {
       background-color: #e6fe52;
       border-radius: 4px;
       opacity: 1;
+      -webkit-transition-property: opacity, -webkit-transform;
+      transition-property: opacity, -webkit-transform;
+      -o-transition-property: transform, opacity;
       transition-property: transform, opacity;
+      transition-property: transform, opacity, -webkit-transform;
+      -webkit-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
       transition-timing-function: ease;
+      -webkit-transition-duration: 0.4s;
+      -o-transition-duration: 0.4s;
       transition-duration: 0.4s;
       top: 0;
+      -webkit-transform: translate(56px, -50%);
+      -ms-transform: translate(56px, -50%);
       transform: translate(56px, -50%);
     }
     .right-line-2 {
@@ -169,14 +271,26 @@ header {
       background-color: #e6fe52;
       border-radius: 4px;
       opacity: 1;
+      -webkit-transition-property: opacity, -webkit-transform;
+      transition-property: opacity, -webkit-transform;
+      -o-transition-property: transform, opacity;
       transition-property: transform, opacity;
+      transition-property: transform, opacity, -webkit-transform;
+      -webkit-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
       transition-timing-function: ease;
+      -webkit-transition-duration: 0.4s;
+      -o-transition-duration: 0.4s;
       transition-duration: 0.4s;
       bottom: 0;
+      -webkit-transform: translate(53px, -50%);
+      -ms-transform: translate(53px, -50%);
       transform: translate(53px, -50%);
     }
     &:hover .hamburger-hidden {
       opacity: 1;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
       transform: translate(0, -50%);
     }
   }
@@ -193,10 +307,16 @@ header {
     .hamburger-hidden {
       background-color: black;
       top: 50%;
+      -webkit-transform: translate(0, -50%) rotate(45deg);
+      -ms-transform: translate(0, -50%) rotate(45deg);
       transform: translate(0, -50%) rotate(45deg);
     }
     .right-line-1 {
+      -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
       transform: rotate(135deg);
+      -webkit-transform-origin: center;
+      -ms-transform-origin: center;
       transform-origin: center;
     }
   }

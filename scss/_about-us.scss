@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @mixin square-circles {
   width: 6px;
   height: 6px;
@@ -7,16 +14,23 @@
 .about-us {
   height: 591px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   .stars {
     background: rgb(244, 244, 244);
+    background: -o-radial-gradient(circle, #e0ebed33 2px, rgba(0, 0, 0, 1) 2px);
     background: radial-gradient(circle, #e0ebed33 2px, rgba(0, 0, 0, 1) 2px);
     background-size: 50.84px 50.3px;
     position: absolute;
     height: 100%;
     width: 80%;
     left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
     transform: translate(-50%);
   }
   a {
@@ -24,7 +38,12 @@
   }
 }
 .about-us-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
   z-index: 1;
@@ -52,8 +71,14 @@
     margin-bottom: 48px;
   }
   a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
     column-gap: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     span {
       font-family: BRSonoma-Bold;
@@ -63,24 +88,42 @@
       letter-spacing: 0em;
       text-align: center;
       color: #e0ebed;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
       transition: all 0.3s;
     }
     &:hover {
+      -webkit-text-decoration-line: none;
       text-decoration-line: none;
       letter-spacing: 1px;
+      -webkit-column-gap: 15px;
+      -moz-column-gap: 15px;
       column-gap: 15px;
     }
   }
 }
 
 .about-us-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   z-index: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   .about-us-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-column-gap: 24px;
+    -moz-column-gap: 24px;
     column-gap: 24px;
     img {
       padding: 15px;
@@ -89,18 +132,33 @@
       height: 48px;
     }
     .about-row-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       .about-square {
         padding: 8px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         width: 100px;
         height: 100px;
         border: 1px solid #e0ebed33;
         .square-circles {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-column-gap: 2px;
+          -moz-column-gap: 2px;
           column-gap: 2px;
           .circle {
             @include square-circles();
@@ -154,8 +212,14 @@
     margin-right: 138px;
   }
   .about-us-row-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-column-gap: 36px;
+    -moz-column-gap: 36px;
     column-gap: 36px;
     img {
       padding: 15px;
@@ -164,18 +228,33 @@
       height: 48px;
     }
     .about-row-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       .about-square {
         padding: 8px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         width: 100px;
         height: 100px;
         border: 1px solid #e0ebed33;
         .square-circles {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-column-gap: 2px;
+          -moz-column-gap: 2px;
           column-gap: 2px;
           .circle {
             @include square-circles();
@@ -216,8 +295,15 @@
 @media only screen and (max-width: 1060px) {
   .about-us {
     margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     .about-us-text {
       width: auto;
@@ -232,7 +318,12 @@
       }
     }
     .about-us-content {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       .vertical-line {
         display: none;
@@ -259,8 +350,14 @@
     a {
       display: block;
       z-index: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-column-gap: 10px;
+      -moz-column-gap: 10px;
       column-gap: 10px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       margin-top: 32px;
       span {
@@ -271,11 +368,16 @@
         letter-spacing: 0em;
         text-align: center;
         color: #e0ebed;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
       }
       &:hover {
+        -webkit-text-decoration-line: none;
         text-decoration-line: none;
         letter-spacing: 1px;
+        -webkit-column-gap: 15px;
+        -moz-column-gap: 15px;
         column-gap: 15px;
       }
     }

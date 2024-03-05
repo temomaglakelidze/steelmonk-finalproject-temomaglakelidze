@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import "./reset";
 @import "./header";
 @import "./menu";
@@ -40,11 +47,19 @@ body {
   }
   .body-links {
     position: absolute;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 10%;
     left: -60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-column-gap: 48px;
+    -moz-column-gap: 48px;
     column-gap: 48px;
     z-index: 5;
     a {
@@ -62,7 +77,11 @@ body {
     .dots-space {
       height: 4px;
       width: 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       cursor: pointer;
       .dots {

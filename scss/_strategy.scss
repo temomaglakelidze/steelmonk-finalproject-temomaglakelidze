@@ -1,10 +1,22 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @mixin small-square {
   width: 8px;
   height: 8px;
   background-color: #e6fe52;
 }
 .strategy {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 48px;
   margin-bottom: 64px;
@@ -16,7 +28,11 @@
     color: #e0ebed;
   }
   .strategy-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     button {
@@ -30,7 +46,11 @@
       padding: 48px 24px;
       cursor: pointer;
       .strategy-small-squares {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-column-gap: 4px;
+        -moz-column-gap: 4px;
         column-gap: 4px;
         margin-bottom: 32px;
         .small-square {
@@ -69,9 +89,15 @@
       a {
         text-decoration: none;
         color: #e0ebed;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 10px;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
       }
       &:hover a {
@@ -82,10 +108,15 @@
 }
 @media only screen and (max-width: 950px) {
   .strategy {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     .strategy-content {
       max-width: none;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       button {
         display: none;
